@@ -64,14 +64,6 @@ git push origin main
 
 ---
 
-## What Was Updated for GitHub
-- changed the live website URL to the GitHub Pages address
-- removed old SciSpace hosting references
-- added GitHub repository information
-- updated social links in the website to include GitHub
-- changed social preview metadata to use the GitHub Pages site URL and local profile image
-- added `.nojekyll` support for clean static hosting
-
 ---
 
 ## Common Edits
