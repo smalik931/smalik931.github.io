@@ -96,7 +96,7 @@ Search in `index.html` for:
 You can preview the website locally before pushing changes:
 
 ```bash
-cd sheebamalik.github.io
+cd sheebamalik931.github.io
 python -m http.server 8000
 ```
 
