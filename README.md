@@ -24,7 +24,7 @@ sheebamalik.github.io
 
 Live URL:
 ```text
-https://sheebamalik.github.io/
+https://smalik931.github.io/
 ```
 
 GitHub Pages publishes the site directly from the `main` branch when `index.html` is present in the repository root.
@@ -41,7 +41,7 @@ GitHub Pages publishes the site directly from the `main` branch when `index.html
 
 ### Edit locally and push
 ```bash
-git clone https://github.com/smalik931/sheebamalik.github.io.git
+git clone https://github.com/smalik931/sheebamalik931.github.io.git
 cd sheebamalik.github.io
 
 # edit files
