@@ -42,7 +42,7 @@ GitHub Pages publishes the site directly from the `main` branch when `index.html
 ### Edit locally and push
 ```bash
 git clone https://github.com/smalik931/sheebamalik931.github.io.git
-cd sheebamalik.github.io
+cd sheebamalik931.github.io
 
 # edit files
 git add index.html README.md profile-photo.jpg
