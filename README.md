@@ -19,7 +19,7 @@ This website is configured as a **GitHub Pages user site**.
 
 Repository name:
 ```text
-sheebamalik.github.io
+sheebamalik931.github.io
 ```
 
 Live URL:
