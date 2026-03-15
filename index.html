@@ -1,662 +1,874 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dr. Sheeba Malik - Computational Biophysicist specializing in molecular dynamics simulations, high-performance computing, and theoretical modeling of complex molecular systems">
-    <meta name="keywords" content="computational biophysics, molecular dynamics, lipid membranes, HPC, computational chemistry">
-    <meta name="author" content="Dr. Sheeba Malik">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Dr. Sheeba Malik - Computational Biophysicist">
-    <meta property="og:description" content="Postdoctoral Research Fellow specializing in molecular dynamics simulations and computational biophysics">
-    <meta property="og:url" content="https://smalik931.github.io/smalik931.github.io/sheebamalik.github.io/">
-    <meta property="og:image" content="https://smalik931.github.io/smalik931.github.io/sheebamalik.github.io/profile-photo.jpg">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dr. Sheeba Malik - Computational Biophysicist">
-    <meta name="twitter:description" content="Postdoctoral Research Fellow specializing in molecular dynamics simulations and computational biophysics">
-    <meta name="twitter:image" content="https://smalik931.github.io/smalik931.github.io/sheebamalik.github.io/profile-photo.jpg">
-    <meta name="theme-color" content="#2563eb">
-    <link rel="canonical" href="https://smalik931.github.io/smalik931.github.io/sheebamalik.github.io/">
-    <link rel="icon" type="image/jpeg" href="profile-photo.jpg">
-    
-    <title>Dr. Sheeba Malik - Computational Biophysicist</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
-        }
-        .hero-pattern {
-            background-color: #667eea;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-        .section-title {
-            position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .skill-tag {
-            transition: all 0.3s ease;
-        }
-        .skill-tag:hover {
-            transform: scale(1.05);
-        }
-        nav {
-            transition: all 0.3s ease;
-        }
-        .nav-scrolled {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Dr. Sheeba Malik - Computational Biophysicist specializing in molecular dynamics simulations, high-performance computing, and theoretical modeling of complex molecular systems."
+  />
+  <meta
+    name="keywords"
+    content="computational biophysics, molecular dynamics, lipid membranes, HPC, computational chemistry"
+  />
+  <meta name="author" content="Dr. Sheeba Malik" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dr. Sheeba Malik - Computational Biophysicist" />
+  <meta
+    property="og:description"
+    content="Postdoctoral Research Fellow specializing in molecular dynamics simulations and computational biophysics."
+  />
+  <meta
+    property="og:url"
+    content="https://smalik931.github.io/sheebamalik.github.io/"
+  />
+  <meta
+    property="og:image"
+    content="https://smalik931.github.io/sheebamalik.github.io/profile-photo.jpg"
+  />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dr. Sheeba Malik - Computational Biophysicist" />
+  <meta
+    name="twitter:description"
+    content="Postdoctoral Research Fellow specializing in molecular dynamics simulations and computational biophysics."
+  />
+  <meta
+    name="twitter:image"
+    content="https://smalik931.github.io/sheebamalik.github.io/profile-photo.jpg"
+  />
+
+  <meta name="theme-color" content="#0f766e" />
+  <link
+    rel="canonical"
+    href="https://smalik931.github.io/sheebamalik.github.io/"
+  />
+  <link rel="icon" type="image/jpeg" href="profile-photo.jpg" />
+
+  <title>Dr. Sheeba Malik - Computational Biophysicist</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
+    }
+
+    .hero-pattern {
+      background-color: #4f7df0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.09'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 64px;
+      height: 3px;
+      background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
+      border-radius: 999px;
+    }
+
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .skill-tag {
+      transition: all 0.25s ease;
+    }
+
+    .skill-tag:hover {
+      transform: scale(1.04);
+    }
+
+    nav {
+      transition: all 0.3s ease;
+    }
+
+    .nav-scrolled {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav id="navbar" class="fixed w-full top-0 z-50 bg-white shadow-sm">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-transparent bg-clip-text gradient-bg">
-                    Dr. Sheeba Malik
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">About</a>
-                    <a href="#research" class="text-gray-700 hover:text-purple-600 transition">Research</a>
-                    <a href="#publications" class="text-gray-700 hover:text-purple-600 transition">Publications</a>
-                    <a href="#experience" class="text-gray-700 hover:text-purple-600 transition">Experience</a>
-                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
-                </div>
-                <button id="mobile-menu-button" class="md:hidden text-gray-700">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
-                <a href="#home" class="block text-gray-700 hover:text-purple-600 py-2">Home</a>
-                <a href="#about" class="block text-gray-700 hover:text-purple-600 py-2">About</a>
-                <a href="#research" class="block text-gray-700 hover:text-purple-600 py-2">Research</a>
-                <a href="#publications" class="block text-gray-700 hover:text-purple-600 py-2">Publications</a>
-                <a href="#experience" class="block text-gray-700 hover:text-purple-600 py-2">Experience</a>
-                <a href="#contact" class="block text-gray-700 hover:text-purple-600 py-2">Contact</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-pattern pt-32 pb-20 px-6">
-        <div class="container mx-auto text-center text-white">
-            <div class="mb-8">
-                <img src="profile-photo.jpg" 
-                     alt="Dr. Sheeba Malik" 
-                     class="w-40 h-40 rounded-full mx-auto border-4 border-white shadow-2xl object-cover">
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 z-50 w-full bg-white shadow-sm">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="text-2xl font-bold gradient-text">Dr. Sheeba Malik</div>
+
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 transition hover:text-teal-700">Home</a>
+          <a href="#about" class="text-gray-700 transition hover:text-teal-700">About</a>
+          <a href="#research" class="text-gray-700 transition hover:text-teal-700">Research</a>
+          <a href="#publications" class="text-gray-700 transition hover:text-teal-700">Publications</a>
+          <a href="#experience" class="text-gray-700 transition hover:text-teal-700">Experience</a>
+          <a href="#contact" class="text-gray-700 transition hover:text-teal-700">Contact</a>
+        </div>
+
+        <button id="mobile-menu-button" class="text-gray-700 md:hidden" aria-label="Open menu">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+        <a href="#home" class="block py-2 text-gray-700 hover:text-teal-700">Home</a>
+        <a href="#about" class="block py-2 text-gray-700 hover:text-teal-700">About</a>
+        <a href="#research" class="block py-2 text-gray-700 hover:text-teal-700">Research</a>
+        <a href="#publications" class="block py-2 text-gray-700 hover:text-teal-700">Publications</a>
+        <a href="#experience" class="block py-2 text-gray-700 hover:text-teal-700">Experience</a>
+        <a href="#contact" class="block py-2 text-gray-700 hover:text-teal-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero-pattern px-6 pb-20 pt-32">
+    <div class="container mx-auto text-center text-white">
+      <div class="mb-8">
+        <img
+          src="profile-photo.jpg"
+          alt="Dr. Sheeba Malik"
+          class="mx-auto h-40 w-40 rounded-full border-4 border-white object-cover shadow-2xl"
+        />
+      </div>
+
+      <h1 class="mb-4 text-5xl font-extrabold md:text-7xl">Dr. Sheeba Malik</h1>
+      <p class="mb-6 text-2xl font-medium text-cyan-50 md:text-3xl">
+        Computational Biophysicist
+      </p>
+      <p class="mx-auto mb-10 max-w-4xl text-lg leading-relaxed text-blue-50 md:text-2xl">
+        Postdoctoral Research Fellow at Max Planck Institute for Dynamics of
+        Complex Technical Systems
+      </p>
+
+      <div class="mb-10 flex flex-wrap justify-center gap-4">
+        <a
+          href="#contact"
+          class="rounded-full bg-white px-8 py-3 font-semibold text-teal-700 transition hover:bg-teal-50"
+        >
+          Get in Touch
+        </a>
+        <a
+          href="#publications"
+          class="rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition hover:bg-white hover:text-teal-700"
+        >
+          View Publications
+        </a>
+      </div>
+
+      <div class="flex justify-center space-x-6">
+        <a
+          href="mailto:malik@mpi-magdeburg.mpg.de"
+          class="text-white transition hover:text-cyan-100"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope text-2xl"></i>
+        </a>
+        <a
+          href="https://scholar.google.com/citations?user=YgpCteoAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white transition hover:text-cyan-100"
+          aria-label="Google Scholar"
+        >
+          <i class="fas fa-graduation-cap text-2xl"></i>
+        </a>
+        <a
+          href="https://github.com/smalik931"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white transition hover:text-cyan-100"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a
+          href="https://orcid.org/0000-0002-9812-513X"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white transition hover:text-cyan-100"
+          aria-label="ORCID"
+        >
+          <i class="fab fa-orcid text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-white px-6 py-20">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center">
+        <h2 class="section-title mb-12 text-4xl font-bold">About Me</h2>
+      </div>
+
+      <div class="grid items-center gap-12 md:grid-cols-2">
+        <div>
+          <img
+            src="profile-photo.jpg"
+            alt="Dr. Sheeba Malik"
+            class="max-h-[520px] w-full rounded-xl object-cover shadow-xl"
+          />
+        </div>
+
+        <div>
+          <p class="mb-6 text-lg leading-relaxed text-gray-700">
+            I am a computational biophysicist specializing in
+            <strong>large-scale molecular dynamics simulations</strong>,
+            <strong>high-performance computing</strong>, and
+            <strong>theoretical modeling</strong> of complex molecular systems.
+          </p>
+
+          <p class="mb-6 text-lg leading-relaxed text-gray-700">
+            My research focuses on
+            <strong>lipid membrane phase behavior</strong>,
+            <strong>interfacial water thermodynamics</strong>,
+            <strong>solvent-biopolymer interactions</strong>, and
+            <strong>transport phenomena</strong> in biological and
+            biomass-derived materials.
+          </p>
+
+          <p class="mb-6 text-lg leading-relaxed text-gray-700">
+            With experience as PI and Co-PI on
+            <strong>NSF ACCESS allocations</strong>, I have led multi-million
+            core-hour simulation campaigns and developed optimized
+            GPU-accelerated workflows.
+          </p>
+
+          <div class="mt-8 grid grid-cols-2 gap-4">
+            <div class="rounded-lg bg-teal-50 p-4 text-center">
+              <div class="text-3xl font-bold text-teal-700">15+</div>
+              <div class="text-gray-600">Publications</div>
             </div>
-            <h1 class="text-5xl md:text-6xl font-bold mb-4">Dr. Sheeba Malik</h1>
-            <p class="text-xl md:text-2xl mb-6 text-purple-100">Computational Biophysicist</p>
-            <p class="text-lg md:text-xl mb-3 max-w-3xl mx-auto text-purple-50">
-                Postdoctoral Research Fellow at Max Planck Institute for Dynamics of Complex Technical Systems
+            <div class="rounded-lg bg-blue-50 p-4 text-center">
+              <div class="text-3xl font-bold text-blue-700">2</div>
+              <div class="text-gray-600">NSF Grants</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research" class="bg-gray-50 px-6 py-20">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center">
+        <h2 class="section-title mb-12 text-4xl font-bold">Research Interests</h2>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="card-hover rounded-lg bg-white p-8 shadow-md">
+          <div class="mb-4 text-4xl text-teal-700">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <h3 class="mb-4 text-xl font-bold">Molecular Dynamics Simulations</h3>
+          <p class="text-gray-600">
+            Expert in all-atom simulations, coarse-grained modeling, umbrella
+            sampling, and absolute binding free energy calculations.
+          </p>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-8 shadow-md">
+          <div class="mb-4 text-4xl text-teal-700">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3 class="mb-4 text-xl font-bold">High-Performance Computing</h3>
+          <p class="text-gray-600">
+            Proficient in job scheduling using SLURM, parallel processing, and
+            workflow optimization for large-scale simulations.
+          </p>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-8 shadow-md">
+          <div class="mb-4 text-4xl text-teal-700">
+            <i class="fas fa-dna"></i>
+          </div>
+          <h3 class="mb-4 text-xl font-bold">Biophysical Systems</h3>
+          <p class="text-gray-600">
+            Specialized in interfacial water dynamics, phase transitions, lipid
+            membranes, DNA, and cellulose dynamics.
+          </p>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-8 shadow-md">
+          <div class="mb-4 text-4xl text-teal-700">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="mb-4 text-xl font-bold">Algorithm Development</h3>
+          <p class="text-gray-600">
+            Skilled in developing custom algorithms, data analysis, and
+            statistical modeling for complex systems.
+          </p>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-8 shadow-md">
+          <div class="mb-4 text-4xl text-teal-700">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="mb-4 text-xl font-bold">Machine Learning</h3>
+          <p class="text-gray-600">
+            Experience with ML techniques such as TensorFlow, Scikit-Learn, and
+            Keras for data-driven analysis in computational chemistry.
+          </p>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-8 shadow-md">
+          <div class="mb-4 text-4xl text-teal-700">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="mb-4 text-xl font-bold">Scientific Leadership</h3>
+          <p class="text-gray-600">
+            Demonstrated leadership in mentoring junior researchers, securing
+            grants, and contributing to peer-reviewed publications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="bg-white px-6 py-20">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center">
+        <h2 class="section-title mb-12 text-4xl font-bold">Technical Skills</h2>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <h3 class="mb-6 text-2xl font-bold text-teal-700">Simulation Tools</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">GROMACS</span>
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">CHARMM-GUI</span>
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">AMBER</span>
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">MDAnalysis</span>
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">LAMMPS</span>
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">NWChem</span>
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">Gaussian</span>
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">PLUMED</span>
+            <span class="skill-tag rounded-full bg-teal-100 px-4 py-2 text-sm font-medium text-teal-700">OpenMM</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-6 text-2xl font-bold text-blue-700">Visualization Tools</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-tag rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">PyMOL</span>
+            <span class="skill-tag rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">UCSF Chimera</span>
+            <span class="skill-tag rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">VMD</span>
+            <span class="skill-tag rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">ChemDraw</span>
+            <span class="skill-tag rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">Avogadro</span>
+            <span class="skill-tag rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">Blender</span>
+            <span class="skill-tag rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700">OVITO</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-6 text-2xl font-bold text-emerald-700">Programming Languages</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-tag rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">Python</span>
+            <span class="skill-tag rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">FORTRAN</span>
+            <span class="skill-tag rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">Shell Script</span>
+            <span class="skill-tag rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">MATLAB</span>
+            <span class="skill-tag rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">C++</span>
+            <span class="skill-tag rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">LaTeX</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mb-6 text-2xl font-bold text-orange-700">Machine Learning</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="skill-tag rounded-full bg-orange-100 px-4 py-2 text-sm font-medium text-orange-700">TensorFlow</span>
+            <span class="skill-tag rounded-full bg-orange-100 px-4 py-2 text-sm font-medium text-orange-700">Scikit-Learn</span>
+            <span class="skill-tag rounded-full bg-orange-100 px-4 py-2 text-sm font-medium text-orange-700">Keras</span>
+            <span class="skill-tag rounded-full bg-orange-100 px-4 py-2 text-sm font-medium text-orange-700">Jupyter Notebook</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="bg-gray-50 px-6 py-20">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center">
+        <h2 class="section-title mb-12 text-4xl font-bold">Selected Publications</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="card-hover rounded-lg bg-white p-6 shadow-md">
+          <div class="flex items-start">
+            <div class="mr-4 mt-1 text-2xl text-teal-700">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-lg font-bold">
+                Simulation and Generalized Langevin Equation Study of Lipid
+                Subdiffusion in Biomembrane Phases
+              </h3>
+              <p class="mb-2 text-gray-600">
+                Malik, S., Kneller, G.R., Smith, M.D., Smith, J.C.
+              </p>
+              <p class="font-medium text-teal-700">Biophysical Journal, 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-6 shadow-md">
+          <div class="flex items-start">
+            <div class="mr-4 mt-1 text-2xl text-teal-700">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-lg font-bold">
+                Artificial Intelligence-Driven Aptamer Optimization Pipeline for
+                Targeted Therapeutics in Healthcare
+              </h3>
+              <p class="mb-2 text-gray-600">
+                Gupta, T., Sharma, P., Malik, S., Pant, P.
+              </p>
+              <p class="font-medium text-teal-700">Molecular Pharmaceutics, 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-6 shadow-md">
+          <div class="flex items-start">
+            <div class="mr-4 mt-1 text-2xl text-teal-700">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-lg font-bold">
+                Relaxation time scales of interfacial water upon fluid to ripple
+                to gel phase transitions of bilayers
+              </h3>
+              <p class="mb-2 text-gray-600">
+                Malik, S., Karmakar, S., Debnath, A.
+              </p>
+              <p class="font-medium text-teal-700">
+                Journal of Chemical Physics, 2023, 158, 114503
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-6 shadow-md">
+          <div class="flex items-start">
+            <div class="mr-4 mt-1 text-2xl text-teal-700">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-lg font-bold">
+                Quantifying dynamical heterogeneity length scales of interface
+                water across model membrane phase transitions
+              </h3>
+              <p class="mb-2 text-gray-600">
+                Malik, S., Karmakar, S., Debnath, A.
+              </p>
+              <p class="font-medium text-teal-700">
+                Journal of Chemical Physics, 2023, 158, 091103
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-6 shadow-md">
+          <div class="flex items-start">
+            <div class="mr-4 mt-1 text-2xl text-teal-700">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-lg font-bold">
+                Structural changes of interfacial water upon fluid-ripple-gel
+                phase transitions of bilayers
+              </h3>
+              <p class="mb-2 text-gray-600">Malik, S., Debnath, A.</p>
+              <p class="font-medium text-teal-700">
+                Chemical Physics Letters, 2022, 799, 139613
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-hover rounded-lg bg-white p-6 shadow-md">
+          <div class="flex items-start">
+            <div class="mr-4 mt-1 text-2xl text-teal-700">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-lg font-bold">
+                Dehydration-induced ordering mechanism of lipid bilayers
+              </h3>
+              <p class="mb-2 text-gray-600">Malik, S., Debnath, A.</p>
+              <p class="font-medium text-teal-700">
+                Journal of Chemical Physics, 2021, 154, 174904
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a
+          href="https://scholar.google.com/citations?user=YgpCteoAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block rounded-full bg-teal-700 px-8 py-3 font-semibold text-white transition hover:bg-teal-800"
+        >
+          View All Publications on Google Scholar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="bg-white px-6 py-20">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center">
+        <h2 class="section-title mb-12 text-4xl font-bold">Experience</h2>
+      </div>
+
+      <div class="space-y-8">
+        <div class="border-l-4 border-teal-700 pl-6">
+          <div class="mb-2 flex flex-wrap items-center justify-between">
+            <h3 class="text-2xl font-bold">Postdoctoral Research Fellow</h3>
+            <span class="font-medium text-teal-700">Jan 2026 - Present</span>
+          </div>
+          <p class="mb-2 text-xl text-gray-700">
+            Max Planck Institute for Dynamics of Complex Technical Systems
+          </p>
+          <p class="mb-2 text-gray-600">Magdeburg, Germany</p>
+          <p class="text-gray-600">Advisor: Prof. Matthias Stein</p>
+        </div>
+
+        <div class="border-l-4 border-teal-700 pl-6">
+          <div class="mb-2 flex flex-wrap items-center justify-between">
+            <h3 class="text-2xl font-bold">Postdoctoral Research Fellow</h3>
+            <span class="font-medium text-teal-700">May 2023 - Jan 2026</span>
+          </div>
+          <p class="mb-2 text-xl text-gray-700">
+            University of Tennessee &amp; Oak Ridge National Laboratory
+          </p>
+          <p class="mb-2 text-gray-600">Tennessee, USA</p>
+          <p class="mb-3 text-gray-600">Advisor: Prof. Jeremy C. Smith</p>
+          <ul class="list-inside list-disc space-y-2 text-gray-600">
+            <li>Designed and executed large-scale all-atom MD simulation campaigns (&gt;1 million core-hours).</li>
+            <li>Developed GPU-optimized workflows in GROMACS, reducing simulation turnaround time by 30%.</li>
+            <li>Applied generalized Langevin equation modeling to characterize non-Markovian subdiffusive transport.</li>
+            <li>Led NSF ACCESS computational allocations as PI/Co-PI.</li>
+            <li>Mentored graduate and undergraduate researchers in MD simulation setup and analysis.</li>
+          </ul>
+        </div>
+
+        <div class="border-l-4 border-teal-700 pl-6">
+          <div class="mb-2 flex flex-wrap items-center justify-between">
+            <h3 class="text-2xl font-bold">Ph.D. in Computational Biology</h3>
+            <span class="font-medium text-teal-700">Jul 2017 - Nov 2023</span>
+          </div>
+          <p class="mb-2 text-xl text-gray-700">
+            Indian Institute of Technology (IIT) Jodhpur
+          </p>
+          <p class="mb-2 text-gray-600">Jodhpur, India</p>
+          <p class="mb-3 text-gray-600">Advisor: Prof. Ananya Debnath</p>
+          <p class="italic text-gray-700">
+            Thesis: "Dynamical Heterogeneity of Interface Water upon Membrane
+            Phase Transitions"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grants -->
+  <section class="bg-gray-50 px-6 py-20">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center">
+        <h2 class="section-title mb-12 text-4xl font-bold">Grants &amp; Awards</h2>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="rounded-lg bg-white p-6 shadow-md">
+          <div class="mb-4 flex items-start">
+            <div class="mr-4 text-3xl text-teal-700">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold">NSF ACCESS Grant (Co-PI)</h3>
+              <p class="mb-2 font-medium text-teal-700">BIO240114 | Apr 2024 - Mar 2026</p>
+              <p class="text-gray-600">
+                Combinatorial effects of ABE fermentation products on lipid
+                membrane structure and organization.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg bg-white p-6 shadow-md">
+          <div class="mb-4 flex items-start">
+            <div class="mr-4 text-3xl text-teal-700">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold">NSF ACCESS Grant (PI)</h3>
+              <p class="mb-2 font-medium text-teal-700">BIO240046 | Feb 2024 - Mar 2026</p>
+              <p class="text-gray-600">
+                Dynamical Influences on Co-solvent Phase Separation in Biomass
+                for Bioenergy Applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg bg-white p-6 shadow-md">
+          <div class="mb-4 flex items-start">
+            <div class="mr-4 text-3xl text-teal-700">
+              <i class="fas fa-award"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold">UT Travel Award</h3>
+              <p class="text-gray-600">
+                Received to present work at Biophysical Conference 2025.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg bg-white p-6 shadow-md">
+          <div class="mb-4 flex items-start">
+            <div class="mr-4 text-3xl text-teal-700">
+              <i class="fas fa-award"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-xl font-bold">Senior Research Fellowship (MHRD)</h3>
+              <p class="mb-2 font-medium text-teal-700">Jul 2019 - Jul 2022</p>
+              <p class="text-gray-600">
+                Awarded based on qualifying the GATE exam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white px-6 py-20">
+    <div class="container mx-auto max-w-4xl">
+      <div class="text-center">
+        <h2 class="section-title mb-12 text-4xl font-bold">Get in Touch</h2>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="mr-4 mt-1 text-2xl text-teal-700">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-lg font-bold">Email</h3>
+              <a href="mailto:malik@mpi-magdeburg.mpg.de" class="text-gray-600 hover:text-teal-700">
+                malik@mpi-magdeburg.mpg.de
+              </a>
+              <br />
+              <a href="mailto:malik.sheeba931@gmail.com" class="text-gray-600 hover:text-teal-700">
+                malik.sheeba931@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="mr-4 mt-1 text-2xl text-teal-700">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h3 class="mb-2 text-lg font-bold">Address</h3>
+              <p class="text-gray-600">
+                Max-Planck-Institute<br />
+                Sandtorstraße 1<br />
+                D-39106 Magdeburg<br />
+                Germany
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg bg-teal-50 p-8">
+          <h3 class="mb-6 text-2xl font-bold">Connect with Me</h3>
+          <div class="space-y-4">
+            <a
+              href="https://scholar.google.com/citations?user=YgpCteoAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center text-gray-700 transition hover:text-teal-700"
+            >
+              <i class="fas fa-graduation-cap mr-4 text-2xl"></i>
+              <span class="text-lg">Google Scholar</span>
+            </a>
+            <a
+              href="https://github.com/smalik931"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center text-gray-700 transition hover:text-teal-700"
+            >
+              <i class="fab fa-github mr-4 text-2xl"></i>
+              <span class="text-lg">GitHub</span>
+            </a>
+            <a
+              href="https://orcid.org/0000-0002-9812-513X"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center text-gray-700 transition hover:text-teal-700"
+            >
+              <i class="fab fa-orcid mr-4 text-2xl"></i>
+              <span class="text-lg">ORCID</span>
+            </a>
+          </div>
+
+          <div class="mt-8 rounded-lg bg-white p-4">
+            <p class="text-center italic text-gray-600">
+              "Advancing molecular-level understanding of structure-dynamics
+              relationships across biological and soft-matter systems"
             </p>
-            <p class="text-base md:text-lg mb-8 text-purple-100">
-                <a href="https://smalik931.github.io/smalik931.github.io/sheebamalik.github.io/" class="underline decoration-purple-200 underline-offset-4 hover:text-white">https://smalik931.github.io/smalik931.github.io/sheebamalik.github.io/</a>
-            </p>
-            <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <a href="#contact" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-purple-50 transition">
-                    Get in Touch
-                </a>
-                <a href="#publications" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition">
-                    View Publications
-                </a>
-            </div>
-            <div class="flex justify-center space-x-6">
-                <a href="mailto:malik@mpi-magdeburg.mpg.de" class="text-white hover:text-purple-200 transition" aria-label="Email">
-                    <i class="fas fa-envelope text-2xl"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=YgpCteoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="text-white hover:text-purple-200 transition" aria-label="Google Scholar">
-                    <i class="fas fa-graduation-cap text-2xl"></i>
-                </a>
-                <a href="https://github.com/smalik931" target="_blank" rel="noopener noreferrer" class="text-white hover:text-purple-200 transition" aria-label="GitHub">
-                    <i class="fab fa-github text-2xl"></i>
-                </a>
-                <a href="https://orcid.org/0000-0002-9812-513X" target="_blank" rel="noopener noreferrer" class="text-white hover:text-purple-200 transition" aria-label="ORCID">
-                    <i class="fab fa-orcid text-2xl"></i>
-                </a>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 px-6 bg-white">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold mb-12 text-center section-title">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <img src="profile-photo.jpg" 
-                         alt="Dr. Sheeba Malik" 
-                         class="rounded-lg shadow-xl w-full object-cover max-h-[520px]">
-                </div>
-                <div>
-                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                        I am a computational biophysicist specializing in <strong>large-scale molecular dynamics simulations</strong>, 
-                        <strong>high-performance computing</strong>, and <strong>theoretical modeling</strong> of complex molecular systems.
-                    </p>
-                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                        My research focuses on <strong>lipid membrane phase behavior</strong>, <strong>interfacial water thermodynamics</strong>, 
-                        <strong>solvent-biopolymer interactions</strong>, and <strong>transport phenomena</strong> in biological and 
-                        biomass-derived materials.
-                    </p>
-                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                        With experience as PI and Co-PI on <strong>NSF ACCESS allocations</strong>, I have led multi-million core-hour 
-                        simulation campaigns and developed optimized GPU-accelerated workflows.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4 mt-8">
-                        <div class="text-center p-4 bg-purple-50 rounded-lg">
-                            <div class="text-3xl font-bold text-purple-600">15+</div>
-                            <div class="text-gray-600">Publications</div>
-                        </div>
-                        <div class="text-center p-4 bg-purple-50 rounded-lg">
-                            <div class="text-3xl font-bold text-purple-600">2</div>
-                            <div class="text-gray-600">NSF Grants</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="gradient-bg px-6 py-8 text-white">
+    <div class="container mx-auto text-center">
+      <p class="mb-4">&copy; 2026 Dr. Sheeba Malik. All rights reserved.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:malik@mpi-magdeburg.mpg.de" class="transition hover:text-cyan-100" aria-label="Email">
+          <i class="fas fa-envelope text-xl"></i>
+        </a>
+        <a
+          href="https://scholar.google.com/citations?user=YgpCteoAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition hover:text-cyan-100"
+          aria-label="Google Scholar"
+        >
+          <i class="fas fa-graduation-cap text-xl"></i>
+        </a>
+        <a
+          href="https://github.com/smalik931"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition hover:text-cyan-100"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github text-xl"></i>
+        </a>
+        <a
+          href="https://orcid.org/0000-0002-9812-513X"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition hover:text-cyan-100"
+          aria-label="ORCID"
+        >
+          <i class="fab fa-orcid text-xl"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Research Interests -->
-    <section id="research" class="py-20 px-6 bg-gray-50">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold mb-12 text-center section-title">Research Interests</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Molecular Dynamics Simulations</h3>
-                    <p class="text-gray-600">
-                        Expert in all-atom simulations, coarse-grained modeling, umbrella sampling, and absolute binding free energy calculations
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">High-Performance Computing</h3>
-                    <p class="text-gray-600">
-                        Proficient in job scheduling using SLURM, parallel processing, and workflow optimization for large-scale simulations
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-dna"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Biophysical Systems</h3>
-                    <p class="text-gray-600">
-                        Specialized in interfacial water dynamics, phase transitions, lipid membranes, DNA, and cellulose dynamics
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Algorithm Development</h3>
-                    <p class="text-gray-600">
-                        Skilled in developing custom algorithms, data analysis, and statistical modeling for complex systems
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Machine Learning</h3>
-                    <p class="text-gray-600">
-                        Experience with ML techniques (TensorFlow, Scikit-Learn, Keras) for data-driven analysis in computational chemistry
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4">Scientific Leadership</h3>
-                    <p class="text-gray-600">
-                        Demonstrated leadership in mentoring junior researchers, securing grants, and contributing to peer-reviewed publications
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <script>
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navbar = document.getElementById("navbar");
 
-    <!-- Skills Section -->
-    <section class="py-20 px-6 bg-white">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold mb-12 text-center section-title">Technical Skills</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-purple-600">Simulation Tools</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">GROMACS</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">CHARMM-GUI</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">AMBER</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">MDANALYSIS</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">LAMMPS</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">NWChem</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">Gaussian</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">PLUMED</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">OpenMM</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-purple-600">Visualization Tools</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-tag bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">PyMOL</span>
-                        <span class="skill-tag bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">UCSF Chimera</span>
-                        <span class="skill-tag bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">VMD</span>
-                        <span class="skill-tag bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">ChemDraw</span>
-                        <span class="skill-tag bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">Avogadro</span>
-                        <span class="skill-tag bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">Blender</span>
-                        <span class="skill-tag bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">OVITO</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-purple-600">Programming Languages</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-tag bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">Python</span>
-                        <span class="skill-tag bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">FORTRAN</span>
-                        <span class="skill-tag bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">Shell Script</span>
-                        <span class="skill-tag bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">MATLAB</span>
-                        <span class="skill-tag bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">C++</span>
-                        <span class="skill-tag bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">LaTeX</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-purple-600">Machine Learning</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-tag bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">TensorFlow</span>
-                        <span class="skill-tag bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">Scikit-Learn</span>
-                        <span class="skill-tag bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">Keras</span>
-                        <span class="skill-tag bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">Jupyter Notebook</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
 
-    <!-- Publications -->
-    <section id="publications" class="py-20 px-6 bg-gray-50">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold mb-12 text-center section-title">Selected Publications</h2>
-            <div class="space-y-6">
-                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-start">
-                        <div class="text-purple-600 text-2xl mr-4 mt-1">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2">Simulation and Generalized Langevin Equation Study of Lipid Subdiffusion in Biomembrane Phases</h3>
-                            <p class="text-gray-600 mb-2">Malik, S., Kneller, G.R., Smith, M.D., Smith, J.C.</p>
-                            <p class="text-purple-600 font-medium">Biophysical Journal, 2025</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-start">
-                        <div class="text-purple-600 text-2xl mr-4 mt-1">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2">Artificial Intelligence-Driven Aptamer Optimization Pipeline for Targeted Therapeutics in Healthcare</h3>
-                            <p class="text-gray-600 mb-2">Gupta, T., Sharma, P., Malik, S., Pant, P.</p>
-                            <p class="text-purple-600 font-medium">Molecular Pharmaceutics, 2025</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-start">
-                        <div class="text-purple-600 text-2xl mr-4 mt-1">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2">Relaxation time scales of interfacial water upon fluid to ripple to gel phase transitions of bilayers</h3>
-                            <p class="text-gray-600 mb-2">Malik, S., Karmakar, S., Debnath, A.</p>
-                            <p class="text-purple-600 font-medium">Journal of Chemical Physics, 2023, 158, 114503</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-start">
-                        <div class="text-purple-600 text-2xl mr-4 mt-1">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2">Quantifying dynamical heterogeneity length scales of interface water across model membrane phase transitions</h3>
-                            <p class="text-gray-600 mb-2">Malik, S., Karmakar, S., Debnath, A.</p>
-                            <p class="text-purple-600 font-medium">Journal of Chemical Physics, 2023, 158, 091103</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-start">
-                        <div class="text-purple-600 text-2xl mr-4 mt-1">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2">Structural changes of interfacial water upon fluid-ripple-gel phase transitions of bilayers</h3>
-                            <p class="text-gray-600 mb-2">Malik, S., Debnath, A.</p>
-                            <p class="text-purple-600 font-medium">Chemical Physics Letters, 2022, 799, 139613</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md card-hover">
-                    <div class="flex items-start">
-                        <div class="text-purple-600 text-2xl mr-4 mt-1">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2">Dehydration-induced ordering mechanism of lipid bilayers</h3>
-                            <p class="text-gray-600 mb-2">Malik, S., Debnath, A.</p>
-                            <p class="text-purple-600 font-medium">Journal of Chemical Physics, 2021, 154, 174904</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <a href="https://scholar.google.com/citations?user=YgpCteoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" 
-                   class="inline-block bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transition">
-                    View All Publications on Google Scholar
-                </a>
-            </div>
-        </div>
-    </section>
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("nav-scrolled");
+      } else {
+        navbar.classList.remove("nav-scrolled");
+      }
+    });
 
-    <!-- Experience -->
-    <section id="experience" class="py-20 px-6 bg-white">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold mb-12 text-center section-title">Experience</h2>
-            <div class="space-y-8">
-                <div class="border-l-4 border-purple-600 pl-6">
-                    <div class="flex flex-wrap items-center justify-between mb-2">
-                        <h3 class="text-2xl font-bold">Postdoctoral Research Fellow</h3>
-                        <span class="text-purple-600 font-medium">Jan 2026 - Present</span>
-                    </div>
-                    <p class="text-xl text-gray-700 mb-2">Max Planck Institute for Dynamics of Complex Technical Systems</p>
-                    <p class="text-gray-600 mb-2">Magdeburg, Germany</p>
-                    <p class="text-gray-600">Advisor: Prof. Matthias Stein</p>
-                </div>
-                
-                <div class="border-l-4 border-purple-600 pl-6">
-                    <div class="flex flex-wrap items-center justify-between mb-2">
-                        <h3 class="text-2xl font-bold">Postdoctoral Research Fellow</h3>
-                        <span class="text-purple-600 font-medium">May 2023 - Jan 2026</span>
-                    </div>
-                    <p class="text-xl text-gray-700 mb-2">University of Tennessee & Oak Ridge National Laboratory</p>
-                    <p class="text-gray-600 mb-2">Tennessee, USA</p>
-                    <p class="text-gray-600 mb-3">Advisor: Prof. Jeremy C. Smith</p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-2">
-                        <li>Designed and executed large-scale all-atom MD simulation campaigns (>1 million core-hours)</li>
-                        <li>Developed GPU-optimized workflows in GROMACS, reducing simulation turnaround time by 30%</li>
-                        <li>Applied generalized Langevin equation modeling to characterize non-Markovian subdiffusive transport</li>
-                        <li>Led NSF ACCESS computational allocations as PI/Co-PI</li>
-                        <li>Mentored graduate and undergraduate researchers in MD simulation setup and analysis</li>
-                    </ul>
-                </div>
-                
-                <div class="border-l-4 border-purple-600 pl-6">
-                    <div class="flex flex-wrap items-center justify-between mb-2">
-                        <h3 class="text-2xl font-bold">Ph.D. in Computational Biology</h3>
-                        <span class="text-purple-600 font-medium">Jul 2017 - Nov 2023</span>
-                    </div>
-                    <p class="text-xl text-gray-700 mb-2">Indian Institute of Technology (IIT) Jodhpur</p>
-                    <p class="text-gray-600 mb-2">Jodhpur, India</p>
-                    <p class="text-gray-600 mb-3">Advisor: Prof. Ananya Debnath</p>
-                    <p class="text-gray-700 italic">Thesis: "Dynamical Heterogeneity of Interface Water upon Membrane Phase Transitions"</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    });
 
-    <!-- Grants & Awards -->
-    <section class="py-20 px-6 bg-gray-50">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-4xl font-bold mb-12 text-center section-title">Grants & Awards</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-start mb-4">
-                        <div class="text-purple-600 text-3xl mr-4">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2">NSF ACCESS Grant (Co-PI)</h3>
-                            <p class="text-purple-600 font-medium mb-2">BIO240114 | Apr 2024 - Mar 2026</p>
-                            <p class="text-gray-600">Combinatorial effects of ABE fermentation products on lipid membrane structure and organization</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-start mb-4">
-                        <div class="text-purple-600 text-3xl mr-4">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2">NSF ACCESS Grant (PI)</h3>
-                            <p class="text-purple-600 font-medium mb-2">BIO240046 | Feb 2024 - Mar 2026</p>
-                            <p class="text-gray-600">Dynamical Influences on Co-solvent Phase Separation in Biomass for Bioenergy Applications</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-start mb-4">
-                        <div class="text-purple-600 text-3xl mr-4">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2">UT Travel Award</h3>
-                            <p class="text-gray-600">Received to present work at Biophysical Conference 2025</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-start mb-4">
-                        <div class="text-purple-600 text-3xl mr-4">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2">Senior Research Fellowship (MHRD)</h3>
-                            <p class="text-purple-600 font-medium mb-2">Jul 2019 - Jul 2022</p>
-                            <p class="text-gray-600">Awarded based on qualifying the GATE exam</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    };
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-6 bg-white">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-4xl font-bold mb-12 text-center section-title">Get in Touch</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="space-y-6">
-                    <div class="flex items-start">
-                        <div class="text-purple-600 text-2xl mr-4 mt-1">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2">Email</h3>
-                            <a href="mailto:malik@mpi-magdeburg.mpg.de" class="text-gray-600 hover:text-purple-600">malik@mpi-magdeburg.mpg.de</a><br>
-                            <a href="mailto:malik.sheeba931@gmail.com" class="text-gray-600 hover:text-purple-600">malik.sheeba931@gmail.com</a><br>
-                            <a href="https://smalik931.github.io/smalik931.github.io/sheebamalik.github.io/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-purple-600">smalik931.github.io/sheebamalik.github.io</a>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="flex items-start">
-                        <div class="text-purple-600 text-2xl mr-4 mt-1">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold mb-2">Address</h3>
-                            <p class="text-gray-600">
-                                Max-Planck-Institute<br>
-                                Sandtorstraße 1<br>
-                                D-39106 Magdeburg<br>
-                                Germany
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-purple-50 p-8 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-6">Connect with Me</h3>
-                    <div class="space-y-4">
-                        <a href="https://scholar.google.com/citations?user=YgpCteoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" 
-                           class="flex items-center text-gray-700 hover:text-purple-600 transition">
-                            <i class="fas fa-graduation-cap text-2xl mr-4"></i>
-                            <span class="text-lg">Google Scholar</span>
-                        </a>
-                        <a href="https://github.com/smalik931" target="_blank" rel="noopener noreferrer" 
-                           class="flex items-center text-gray-700 hover:text-purple-600 transition">
-                            <i class="fab fa-github text-2xl mr-4"></i>
-                            <span class="text-lg">GitHub</span>
-                        </a>
-                        <a href="https://orcid.org/0000-0002-9812-513X" target="_blank" rel="noopener noreferrer" 
-                           class="flex items-center text-gray-700 hover:text-purple-600 transition">
-                            <i class="fab fa-orcid text-2xl mr-4"></i>
-                            <span class="text-lg">ORCID</span>
-                        </a>
-                    </div>
-                    <div class="mt-8 p-4 bg-white rounded-lg">
-                        <p class="text-gray-600 text-center italic">
-                            "Advancing molecular-level understanding of structure-dynamics relationships across biological and soft-matter systems"
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, observerOptions);
 
-    <!-- Footer -->
-    <footer class="gradient-bg text-white py-8 px-6">
-        <div class="container mx-auto text-center">
-            <p class="mb-4">&copy; 2026 Dr. Sheeba Malik. All rights reserved.</p>
-            <div class="flex justify-center space-x-6">
-                <a href="mailto:malik@mpi-magdeburg.mpg.de" class="hover:text-purple-200 transition" aria-label="Email">
-                    <i class="fas fa-envelope text-xl"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=YgpCteoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hover:text-purple-200 transition" aria-label="Google Scholar">
-                    <i class="fas fa-graduation-cap text-xl"></i>
-                </a>
-                <a href="https://github.com/smalik931" target="_blank" rel="noopener noreferrer" class="hover:text-purple-200 transition" aria-label="GitHub">
-                    <i class="fab fa-github text-xl"></i>
-                </a>
-                <a href="https://orcid.org/0000-0002-9812-513X" target="_blank" rel="noopener noreferrer" class="hover:text-purple-200 transition" aria-label="ORCID">
-                    <i class="fab fa-orcid text-xl"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('nav-scrolled');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-            }
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all cards
-        document.querySelectorAll('.card-hover').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
-        });
-    </script>
+    document.querySelectorAll(".card-hover").forEach((card) => {
+      card.style.opacity = "0";
+      card.style.transform = "translateY(20px)";
+      card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+      observer.observe(card);
+    });
+  </script>
 </body>
 </html>
