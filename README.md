@@ -1,7 +1,7 @@
 # Dr. Sheeba Malik - Professional Researcher Website
 
 ## Live Website
-- **Website:** https://sheebamalik931.github.io/
+- **Website:** https://smalik931.github.io/
 - **Repository:** https://github.com/smalik931/sheebamalik.github.io
 
 ---
